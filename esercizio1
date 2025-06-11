@@ -1,10 +1,12 @@
 #include <stdio.h>
 
 int main() {
+
+    // inzio variabili
     char nome[25];
     int numero_1;
     int numero_2;
-
+    // print e scan
     printf("Inserisci il tuo nome:\n");
     scanf("%24s", nome);
 
@@ -13,9 +15,9 @@ int main() {
 
     printf("Inserisci il 2° numero:\n");
     scanf("%d", &numero_2);
-
+    //calcolo
     int calcolo = numero_1 + numero_2;
-
+    //stampa
     printf("Ciao %s! Questa è la somma dei due numeri: %d\n", nome, calcolo);
 
     return 0;
