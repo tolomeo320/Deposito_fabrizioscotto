@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main (){
+
+    // dichiarazioni variabili 
+
+    int eta;
+    float peso;
+    char nome [25];
+
+    // stinga
+    printf("Ciao, inserisci il tuo nome:\n");
+    if (scanf("%24s", nome) !=1) {
+        printf("nome non valido\n");
+        return 1; // termine programma con errore
+        }
+    // età
+    printf("Inserisci per favore la tua età:\n");
+    if (scanf("%d", &eta) !=1) {
+        printf("Età non valida\n");
+        return 1; // termina con errore    
+    }
+    // peso float
+    printf("Inserisci per favore il tuo peso esatto:\n");
+    if (scanf("%f", &peso) != 1) {
+        printf("Peso non valido.\n");
+        return 1;  // termina con errore
+        }
+
+    // stampe
+    
+    printf("\nDati inseriti:\n");
+    printf("Nome: %s\n", nome);
+    printf("età: %d\n", eta);
+    printf("Peso:%.2f kg\n", peso);
+
+    return 0;
+
+
+}
