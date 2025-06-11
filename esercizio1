@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    char nome[25];
+    int numero_1;
+    int numero_2;
+
+    printf("Inserisci il tuo nome:\n");
+    scanf("%24s", nome);
+
+    printf("Inserisci il 1° numero:\n");
+    scanf("%d", &numero_1);
+
+    printf("Inserisci il 2° numero:\n");
+    scanf("%d", &numero_2);
+
+    int calcolo = numero_1 + numero_2;
+
+    printf("Ciao %s! Questa è la somma dei due numeri: %d\n", nome, calcolo);
+
+    return 0;
+}
